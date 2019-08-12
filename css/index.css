@@ -220,13 +220,14 @@ footer {
 
     }
 
-    .indexP, h2 {
+    .indexP, h2, nav a {
         font-size: 125%;
     }
 
     .middle-img {
         width: 100%;
     } 
+
     
 }
 
@@ -278,11 +279,11 @@ footer {
     }
 
     h2{
-        font-size: 175%;
+        font-size: 125%;
     }
 
     .indexP {
-        font-size: 175%;
+        font-size: 125%;
     }
 
 

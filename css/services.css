@@ -72,6 +72,8 @@ h1, h2, h3, h4, h5 {
 	margin: 10px auto 10px auto;
 }
 
+/*** Header and Nav Bar Styles ***/
+
 .navBar{
 	/* background:blue; */
 	display:flex;
@@ -99,6 +101,8 @@ h4 {
 	padding-bottom: 50px;
 	font-weight:bold;
 }
+
+/*** Middle Content Styles ***/
 
 .services-MiddleInfo{
 	display:flex;
@@ -142,6 +146,8 @@ h4 {
 
 }
 
+/*** Bottom Content Styles ***/
+
 .sections-Footer {
 	display:flex;
 	width: 100%;
@@ -167,5 +173,47 @@ h3{
 	font-weight: bold;
 }
 
+
+/*** Media Queries Styles ***/
+
+/*** Tablet ***/
+
+@media screen and (max-width: 800px){
+    .wrapper{
+        padding: 10px;
+        margin-right:0;
+    }
+    .navBar {
+        /* border: 1px solid red; */
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: center;  
+    }
+
+    .logo {
+        /* border: 1px solid red; */
+        display: flex;
+        width: justify;
+        margin: 0px auto;
+        padding: 20px;
+    }
+    nav {
+        /* border: 1px solid red; */
+        display:inline-flex;
+        justify-content: space-evenly;
+        margin-right: 0;
+        width: justify;
+        
+	}
+
+	.services-header-img {
+		width: 100%;
+	}
+
+	.servicesP, h2, h3, li, nav a {
+		font-size: 125%;
+	}
+	
+}
 
 
