@@ -210,10 +210,86 @@ h3{
 		width: 100%;
 	}
 
-	.servicesP, h2, h3, li, nav a {
+	.servicesP, h4, h3, li, nav a{
+		font-size: 125%;
+	}
+
+	.services-Button {
+		font-size: 110%;
+	}
+
+	.copyright {
 		font-size: 125%;
 	}
 	
+}
+
+/*** Phone ***/
+
+@media screen and (max-width: 500px){
+    nav {
+        /* border: 1px solid red; */
+        display:flex;
+        flex-direction: column;
+        border-bottom: 1px solid black;
+    }
+
+    nav a{
+        /* border: 1px solid red; */
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        padding: 20px 0;
+        border-top: 1px solid black;
+        font-size: 200%;
+
+	}
+	
+	.servicesP, h3, h4, li {
+		font-size: 175%;
+	}
+
+	.services-Button {
+		font-size: 125%;
+	}
+
+	.firstContent, .thirdContent, .secondContent {
+		display:flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	#digitalDesign, #marketing, #iosDev {
+		margin-right: 0px;
+	}
+
+	.sections-Footer {
+		display:flex;
+		flex-direction: column;
+	}
+
+	.sections-FooterText {
+		/* border: 1px solid red; */
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	.services-info-img {
+		display: flex;
+        width: justify;
+        margin: 0px auto;
+        padding: 20px;
+	}
+
+	.copyright {
+		font-size: 125%;
+	}
+
+
 }
 
 

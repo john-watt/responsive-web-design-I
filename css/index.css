@@ -228,6 +228,10 @@ footer {
         width: 100%;
     } 
 
+    .copyright {
+		font-size: 125%;
+	}
+
     
 }
 
@@ -279,12 +283,15 @@ footer {
     }
 
     h2{
-        font-size: 125%;
+        font-size: 175%;
     }
 
     .indexP {
-        font-size: 125%;
+        font-size: 175%;
     }
 
+    .copyright {
+		font-size: 125%;
+	}
 
 }
