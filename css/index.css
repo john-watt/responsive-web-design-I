@@ -71,6 +71,7 @@ h1, h2, h3, h4, h5 {
 	margin: 10px auto 10px auto;
 }
 
+/***Header Styles ***/
 .navBar{
 	/* background:blue; */
 	display:flex;
@@ -85,7 +86,7 @@ nav a{
 	margin-right: 55px;
 	color:lightgrey;
 	text-decoration: none;
-	/* font-weight:bold; */
+	font-weight:bold;
 	padding: 8px 0;
 	
 }
@@ -119,6 +120,8 @@ header {
 	padding: 5px 25px 5px;
 	display:block;
 }
+
+/*** Content Styles ***/
 
 h2{
 	font-weight: bold;
@@ -163,6 +166,8 @@ h2{
 	width:60%;
 }
 
+/*** Footer Styles ***/
+
 footer {
 	padding:50px 0;
 }
@@ -170,5 +175,62 @@ footer {
 .copyright {
 	text-align: center;
 }
+
+
+/*** Media Queries Styles ***/
+
+
+/*** Tablet ***/
+
+@media screen and (max-width: 800px){
+    .wrapper{
+        padding: 10px;
+        margin-right:0;
+    }
+    .navBar {
+        /* border: 1px solid red; */
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: center;  
+    }
+
+    .logo {
+        /* border: 1px solid red; */
+        display: flex;
+        width: justify;
+        margin: 0px auto;
+        padding: 20px;
+    }
+    nav {
+        /* border: 1px solid red; */
+        display:inline-flex;
+        justify-content: space-evenly;
+        margin-right: 0;
+        width: justify;
+        /* padding-bottom: 20px; */
+    }
+
+    .headerImg {
+        display: none;
+    }
+
+    header {
+        text-align: center;
+        display:block;
+
+    }
+
+    .indexP {
+        font-size: 110%;
+    }
+
+    .middle-img {
+        width: 100%;
+    }
+
+  
+    
+}
+
 
 
