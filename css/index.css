@@ -97,7 +97,7 @@ header {
 	justify-content: space-evenly;
 	margin-top:50px;
 	padding-bottom: 50px;
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid black;
 }
 
 .headerText{
@@ -150,7 +150,7 @@ h2{
 	justify-content: space-between;
 	padding-top: 25px;
 	padding-bottom:40px;
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid black;
 	
 }
 
@@ -207,7 +207,7 @@ footer {
         justify-content: space-evenly;
         margin-right: 0;
         width: justify;
-        /* padding-bottom: 20px; */
+        
     }
 
     .headerImg {
@@ -220,17 +220,70 @@ footer {
 
     }
 
-    .indexP {
-        font-size: 110%;
+    .indexP, h2 {
+        font-size: 125%;
     }
 
     .middle-img {
         width: 100%;
-    }
-
-  
+    } 
     
 }
 
+/*** Phone ***/
+
+@media screen and (max-width: 500px){
+    nav {
+        /* border: 1px solid red; */
+        display:flex;
+        flex-direction: column;
+        border-bottom: 1px solid black;
+    }
+
+    nav a{
+        /* border: 1px solid red; */
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        padding: 20px 0;
+        border-top: 1px solid black;
+        font-size: 200%;
+
+    }
+
+    .topInfo, .middleInfo {
+        /* border: 1px solid red; */
+        display:flex;
+        flex-direction: column;
+        align-items: stretch; 
+    }
+    
+    .topInfo, .middleInfo, .indexP {
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: stretch;
+        width: 100%;
+        margin-bottom:40px;
+    }
+
+    #features, #about, #services, #products, #vision {
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+
+ 
+
+    .headerText {
+        font-size: 100px;
+    }
+
+    h2{
+        font-size: 175%;
+    }
+
+    .indexP {
+        font-size: 175%;
+    }
 
 
+}
