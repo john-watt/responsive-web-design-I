@@ -1,0 +1,171 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+.wrapper {
+	/* background: yellow; */
+	width: 876px;
+	margin: 10px auto 10px auto;
+}
+
+.navBar{
+	/* background:blue; */
+	display:flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+nav a{
+	/* border: 2px solid white; */
+	display: inline-flex;
+	justify-content:space-between;
+	margin-right: 55px;
+	color:lightgrey;
+	text-decoration: none;
+	padding: 8px 0;	
+}
+
+h4 {
+	font-size: 25px;	
+}
+
+#services-HeaderText {
+	padding-top: 50px;
+	border-bottom: 1px solid black;
+	padding-bottom: 50px;
+	font-weight:bold;
+}
+
+.services-MiddleInfo{
+	display:flex;
+	flex-direction: column;
+	margin-top:40px;
+	justify-content: space-between;
+	border-bottom: 2px solid black;
+}
+
+.firstContent, .thirdContent, .secondContent {
+	display:flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+#digitalDesign, #marketing, #iosDev {
+	display:block;
+	background: #F4F4F4;
+	border:1px solid black;
+	padding:20px;
+	margin-right:40px;
+	margin-bottom:40px;
+}
+
+#uxui, #webDev, #androidDev {
+	display:block;
+	background: #F4F4F4;
+	border:1px solid black;
+	padding:20px;
+	margin-bottom:40px;
+}
+
+.services-Button {
+	display:block;
+	background: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-top:20px;
+	padding: 9px 35px;
+	font-size: 11px;
+
+}
+
+.sections-Footer {
+	display:flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 40px;
+	margin-bottom: 80px;
+}
+
+.sections-FooterText {
+	width:50%;	
+}
+
+
+.copyright {
+	text-align: center;
+}
+
+.footerList {
+	margin-left: 20px;
+}
+
+h3{
+	font-weight: bold;
+}
+
+
+
