@@ -1,4 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -65,13 +64,16 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
 .wrapper {
 	/* background: yellow; */
 	width: 876px;
 	margin: 10px auto 10px auto;
 }
 
-/***Header Styles ***/
+/*** Header and Nav Bar Styles ***/
+
 .navBar{
 	/* background:blue; */
 	display:flex;
@@ -86,99 +88,93 @@ nav a{
 	margin-right: 55px;
 	color:lightgrey;
 	text-decoration: none;
-	font-weight:bold;
-	padding: 8px 0;
-	
+	padding: 8px 0;	
 }
 
-header {
-	/* background:green; */
-	display:flex;
-	justify-content: space-evenly;
-	margin-top:50px;
+h4 {
+	font-size: 25px;	
+}
+
+#services-HeaderText {
+	padding-top: 50px;
+	border-bottom: 1px solid black;
 	padding-bottom: 50px;
-	border-bottom: 2px solid black;
+	font-weight:bold;
 }
 
-.headerText{
-	/* border: 2px solid white; */
+/*** Middle Content Styles ***/
+
+.services-MiddleInfo{
+	display:flex;
 	flex-direction: column;
-	display:flex;
-	text-align: center;
-	font-size: 75px;
-	padding: 60px 0;
-	
-}
-
-.button {
-	background: white;
-	color:black;
-	border: 1px solid black;
-	width: 150px;
-	height: 40px;
-	margin: 0 auto;
-	padding: 5px 25px 5px;
-	display:block;
-}
-
-/*** Content Styles ***/
-
-h2{
-	font-weight: bold;
-}
-
-.indexP {
-	font-size: 110%;
-}
-
-.topInfo {
-	display:flex;
+	margin-top:40px;
 	justify-content: space-between;
-	margin:25px 0;
-}
-
-#features {
-	width: 49%;
-}
-
-#about {
-	width: 49%;
-}
-
-.middleInfo {
-	display:flex;
-	justify-content: space-between;
-	padding-top: 25px;
-	padding-bottom:40px;
 	border-bottom: 2px solid black;
-	
 }
 
-#services {
-	width:60%;
+.firstContent, .thirdContent, .secondContent {
+	display:flex;
+	width: 100%;
+	justify-content: space-between;
 }
 
-#products {
-	width:60%;
+#digitalDesign, #marketing, #iosDev {
+	display:block;
+	background: #F4F4F4;
+	border:1px solid black;
+	padding:20px;
+	margin-right:40px;
+	margin-bottom:40px;
 }
 
-#vision {
-	width:60%;
+#uxui, #webDev, #androidDev {
+	display:block;
+	background: #F4F4F4;
+	border:1px solid black;
+	padding:20px;
+	margin-bottom:40px;
 }
 
-/*** Footer Styles ***/
+.services-Button {
+	display:block;
+	background: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-top:20px;
+	padding: 9px 35px;
+	font-size: 11px;
 
-footer {
-	padding:50px 0;
 }
+
+/*** Bottom Content Styles ***/
+
+.sections-Footer {
+	display:flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 40px;
+	margin-bottom: 80px;
+}
+
+.sections-FooterText {
+	width:50%;	
+}
+
 
 .copyright {
 	text-align: center;
 }
 
+.footerList {
+	margin-left: 20px;
+}
+
+h3{
+	font-weight: bold;
+}
+
 
 /*** Media Queries Styles ***/
-
 
 /*** Tablet ***/
 
@@ -208,31 +204,24 @@ footer {
         margin-right: 0;
         width: justify;
         
-    }
+	}
 
-    .headerImg {
-        display: none;
-    }
+	.services-header-img {
+		width: 100%;
+	}
 
-    header {
-        text-align: center;
-        display:block;
-
-    }
-
-    .indexP, h2, nav a {
-        font-size: 125%;
-    }
-
-    .middle-img {
-        width: 100%;
-    } 
-
-    .copyright {
+	.servicesP, h4, h3, li, nav a{
 		font-size: 125%;
 	}
 
-    
+	.services-Button {
+		font-size: 110%;
+	}
+
+	.copyright {
+		font-size: 125%;
+	}
+	
 }
 
 /*** Phone ***/
@@ -254,44 +243,53 @@ footer {
         border-top: 1px solid black;
         font-size: 200%;
 
-    }
+	}
+	
+	.servicesP, h3, h4, li {
+		font-size: 175%;
+	}
 
-    .topInfo, .middleInfo {
-        /* border: 1px solid red; */
-        display:flex;
-        flex-direction: column;
-        align-items: stretch; 
-    }
-    
-    .topInfo, .middleInfo, .indexP {
-        /* border: 1px solid red; */
-        display: flex;
-        align-items: stretch;
-        width: 100%;
-        margin-bottom:40px;
-    }
-
-    #features, #about, #services, #products, #vision {
-        /* border: 1px solid red; */
-        width: 100%;
-    }
-
- 
-
-    .headerText {
-        font-size: 100px;
-    }
-
-    h2{
-        font-size: 175%;
-    }
-
-    .indexP {
-        font-size: 175%;
-    }
-
-    .copyright {
+	.services-Button {
 		font-size: 125%;
 	}
 
+	.firstContent, .thirdContent, .secondContent {
+		display:flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	#digitalDesign, #marketing, #iosDev {
+		margin-right: 0px;
+	}
+
+	.sections-Footer {
+		display:flex;
+		flex-direction: column;
+	}
+
+	.sections-FooterText {
+		/* border: 1px solid red; */
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	.services-info-img {
+		display: flex;
+        width: justify;
+        margin: 0px auto;
+        padding: 20px;
+	}
+
+	.copyright {
+		font-size: 125%;
+	}
+
+
 }
+
+
